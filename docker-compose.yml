@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  taskmanagementapi2:
+    image: taskmanagementapi2
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8080:8080
