@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.taskmanagement.TaskManagementApiApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-24T17:38:47" hostname="Artins-MacBook-Pro.local" time="0.258">
+<testsuite name="com.example.taskmanagement.TaskManagementApiApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-09-19T17:29:40" hostname="Artins-MacBook-Pro.local" time="0.273">
   <properties/>
-  <testcase name="contextLoads()" classname="com.example.taskmanagement.TaskManagementApiApplicationTests" time="0.258"/>
-  <system-out><![CDATA[13:38:45.037 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.taskmanagement.TaskManagementApiApplicationTests]: TaskManagementApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-13:38:45.087 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.taskmanagement.TaskManagementApiApplication for test class com.example.taskmanagement.TaskManagementApiApplicationTests
+  <testcase name="contextLoads()" classname="com.example.taskmanagement.TaskManagementApiApplicationTests" time="0.273"/>
+  <system-out><![CDATA[13:29:38.855 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.taskmanagement.TaskManagementApiApplicationTests]: TaskManagementApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:29:38.907 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.taskmanagement.TaskManagementApiApplication for test class com.example.taskmanagement.TaskManagementApiApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,31 +14,31 @@
 
  :: Spring Boot ::                (v3.3.3)
 
-2024-08-24T13:38:45.254-04:00  INFO 58473 --- [Task Management API] [    Test worker] c.e.t.TaskManagementApiApplicationTests  : Starting TaskManagementApiApplicationTests using Java 17.0.12 with PID 58473 (started by artinkaveh in /Users/artinkaveh/TaskManagement-API-2)
-2024-08-24T13:38:45.254-04:00  INFO 58473 --- [Task Management API] [    Test worker] c.e.t.TaskManagementApiApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2024-08-24T13:38:45.510-04:00  INFO 58473 --- [Task Management API] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-08-24T13:38:45.535-04:00  INFO 58473 --- [Task Management API] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interface.
-2024-08-24T13:38:45.752-04:00  INFO 58473 --- [Task Management API] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-08-24T13:38:45.770-04:00  INFO 58473 --- [Task Management API] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-08-24T13:38:45.781-04:00  INFO 58473 --- [Task Management API] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-08-24T13:38:45.894-04:00  INFO 58473 --- [Task Management API] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-08-24T13:38:45.904-04:00  INFO 58473 --- [Task Management API] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-08-24T13:38:46.452-04:00  INFO 58473 --- [Task Management API] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2295566b
-2024-08-24T13:38:46.453-04:00  INFO 58473 --- [Task Management API] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-08-24T13:38:46.501-04:00  WARN 58473 --- [Task Management API] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-08-24T13:38:46.502-04:00  WARN 58473 --- [Task Management API] [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2024-08-24T13:38:46.823-04:00  INFO 58473 --- [Task Management API] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-08-24T13:38:46.895-04:00  INFO 58473 --- [Task Management API] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-08-24T13:38:47.018-04:00  WARN 58473 --- [Task Management API] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-08-24T13:38:47.031-04:00  WARN 58473 --- [Task Management API] [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2024-09-19T13:29:39.073-04:00  INFO 41870 --- [Task Management API] [    Test worker] c.e.t.TaskManagementApiApplicationTests  : Starting TaskManagementApiApplicationTests using Java 17.0.12 with PID 41870 (started by artinkaveh in /Users/artinkaveh/TaskManagement-API)
+2024-09-19T13:29:39.073-04:00  INFO 41870 --- [Task Management API] [    Test worker] c.e.t.TaskManagementApiApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2024-09-19T13:29:39.346-04:00  INFO 41870 --- [Task Management API] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-19T13:29:39.367-04:00  INFO 41870 --- [Task Management API] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2024-09-19T13:29:39.589-04:00  INFO 41870 --- [Task Management API] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-19T13:29:39.607-04:00  INFO 41870 --- [Task Management API] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-19T13:29:39.619-04:00  INFO 41870 --- [Task Management API] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-19T13:29:39.737-04:00  INFO 41870 --- [Task Management API] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-19T13:29:39.751-04:00  INFO 41870 --- [Task Management API] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-19T13:29:40.074-04:00  INFO 41870 --- [Task Management API] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b8ee69d
+2024-09-19T13:29:40.075-04:00  INFO 41870 --- [Task Management API] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-19T13:29:40.107-04:00  WARN 41870 --- [Task Management API] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-19T13:29:40.107-04:00  WARN 41870 --- [Task Management API] [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-09-19T13:29:40.410-04:00  INFO 41870 --- [Task Management API] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-19T13:29:40.464-04:00  INFO 41870 --- [Task Management API] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-19T13:29:40.595-04:00  WARN 41870 --- [Task Management API] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-19T13:29:40.608-04:00  WARN 41870 --- [Task Management API] [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: e1117825-745d-4688-a583-add0d256d1b6
+Using generated security password: 93938902-c55b-426a-926a-71333e6a27a7
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2024-08-24T13:38:47.038-04:00  INFO 58473 --- [Task Management API] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2024-08-24T13:38:47.262-04:00  WARN 58473 --- [Task Management API] [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2024-08-24T13:38:47.322-04:00  INFO 58473 --- [Task Management API] [    Test worker] c.e.t.TaskManagementApiApplicationTests  : Started TaskManagementApiApplicationTests in 2.175 seconds (process running for 2.616)
+2024-09-19T13:29:40.620-04:00  INFO 41870 --- [Task Management API] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-19T13:29:40.857-04:00  WARN 41870 --- [Task Management API] [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-09-19T13:29:40.912-04:00  INFO 41870 --- [Task Management API] [    Test worker] c.e.t.TaskManagementApiApplicationTests  : Started TaskManagementApiApplicationTests in 1.95 seconds (process running for 2.407)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
