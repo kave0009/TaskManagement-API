@@ -1,7 +1,4 @@
 package com.example.taskmanagement;
-
-import com.vaadin.flow.component.UI;
-import com.vaadin.flow.component.notification.Notification;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,13 +13,7 @@ public class TaskService {
 
     public Task save(Task task) {
         Task savedTask = taskRepository.save(task);
-        
-        // Notify all UIs about the new task
-        UI.getCurrent().access(() -> {
-            Notification.show("A new task has been added!", 3000, Notification.Position.TOP_CENTER);
-            UI.getCurrent().getPage().reload(); // Force a reload for simplicity
-        });
-
+        Broadcaster.broadcast(new TaskEvent("TASK_ADDED", savedTask));
         return savedTask;
     }
 
@@ -36,11 +27,17 @@ public class TaskService {
         task.setDescription(taskDetails.getDescription());
         task.setCompleted(taskDetails.isCompleted());
         task.setDueDate(taskDetails.getDueDate());
-        return taskRepository.save(task);
+        Task updatedTask = taskRepository.save(task);
+
+        Broadcaster.broadcast(new TaskEvent("TASK_UPDATED", updatedTask));
+        return updatedTask;
     }
 
     public void deleteTask(Long id) {
         taskRepository.deleteById(id);
+        Task deletedTask = new Task();
+        deletedTask.setId(id);
+        Broadcaster.broadcast(new TaskEvent("TASK_DELETED", deletedTask));
     }
 
     public List<Task> getAllTasks() {
